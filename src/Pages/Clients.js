@@ -1,3 +1,6 @@
+import ContactForm from "../Components/Forms/ContactForm";
+
+
 function Clients() {
     return (
         <div className="p-8">
@@ -5,6 +8,7 @@ function Clients() {
             <p className="mt-4 text-lg text-gray-700">
                 Discover how an IUL can help you with financial security.
             </p>
+            <ContactForm templateId="template_tbhs8v7" />
         </div>
     );
 }

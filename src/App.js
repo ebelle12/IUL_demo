@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
+
 
 // Import your pages
 import Agents from "./Pages/Agents";
@@ -13,7 +15,8 @@ function App() {
       <Navbar />
       <main className="flex-grow p-8">
         <Routes>
-          <Route path="/" element={<h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>} />
+          <Route path="/" element={<Home />} />
+
           <Route path="/agents" element={<Agents />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/financial-literacy" element={<FinancialLiteracy />} />
